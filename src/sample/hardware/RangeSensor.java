@@ -1,10 +1,7 @@
 package sample.hardware;
 
 import javafx.geometry.Point2D;
-import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
-import sample.Range;
-import sample.hardware.Robot;
+import sample.environment.Range;
 
 import java.util.ArrayList;
 import java.util.List;

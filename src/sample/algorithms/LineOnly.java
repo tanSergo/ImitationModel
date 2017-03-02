@@ -1,7 +1,6 @@
 package sample.algorithms;
 
 import javafx.geometry.Point2D;
-import sample.Range;
 
 /**
  * Created by Sergo on 25.02.2017.

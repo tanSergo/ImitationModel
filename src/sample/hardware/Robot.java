@@ -3,12 +3,7 @@ package sample.hardware;
 import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import sample.Range;
-import sample.algorithms.Algorithm;
-import sample.algorithms.LineOnly;
-
-import java.util.ArrayList;
-import java.util.List;
+import sample.environment.Range;
 
 import static sample.algorithms.LineOnly.newPosition;
 
