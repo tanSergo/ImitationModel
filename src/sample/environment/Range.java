@@ -14,7 +14,7 @@ import java.util.List;
 public class Range {
     public static List<List<Point2D>> obstacleRects = new ArrayList<>();
     static final Integer numberOfRobots = 10;
-    static Point2D goalPoint = new Point2D(900,600);
+    private static Point2D goalPoint = new Point2D(900,600);
     static final Integer distance = 10;
     static Robot[] robots = new Robot[numberOfRobots];
 
@@ -27,7 +27,7 @@ public class Range {
 
 
 
-    static void initRange(GraphicsContext context, Integer canvaWidth, Integer canvaHeight) {
+    public static void initRange(GraphicsContext context, Integer canvaWidth, Integer canvaHeight) {
         // Отрисовка рамки канвы
         context.setFill(Color.BLACK);
         context.fillRect(0, 0, canvaWidth, 2);

@@ -27,7 +27,7 @@ public class Robot {
         );
     }
 
-    public void setMyXY(Point2D XY) {
+    private void setMyXY(Point2D XY) {
         this.myXY = XY;
     }
 

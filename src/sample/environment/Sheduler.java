@@ -7,7 +7,7 @@ import sample.environment.Range;
  */
 public class Sheduler {
 
-    static void nextStep(){
+    public static void nextStep(){
 //        System.out.println("Button pressed!");
         for (int i = 0; i< Range.numberOfRobots; i++){
             Range.robots[i].takeNewXY();
