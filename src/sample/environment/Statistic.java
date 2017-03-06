@@ -41,7 +41,7 @@ public class Statistic {
     private Integer countConnections() {
         Integer connections = 0;
         for (int i = 0; i < numberOfRobots; i++){
-            for (int j = 0; j < numberOfRobots; j++){
+            for (int j = i + 1; j < numberOfRobots; j++){
                 Point2D robot1 = robots[i].getMyXY();
                 Point2D robot2 = robots[j].getMyXY();
                 if (evaluateDistance(robot1, robot2) > 15.0) connections++;
