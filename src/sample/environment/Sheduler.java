@@ -13,5 +13,8 @@ public class Sheduler {
             Range.robots[i].takeNewXY();
             Range.robots[i].renewPositionOnRange();
         }
+        Range.statistic.renewStatistic();
+        System.out.println("Lost Connection : " + Range.statistic.getLostConnection());
+        System.out.println("Steps : " + Range.statistic.getSteps());
     }
 }

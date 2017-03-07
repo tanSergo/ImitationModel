@@ -17,6 +17,7 @@ public class Range {
     private static Point2D goalPoint = new Point2D(900,600);
     static final Integer distance = 10;
     static Robot[] robots = new Robot[numberOfRobots];
+    static Statistic statistic = new Statistic();
 
 
     private static Point2D[] startPositions = new Point2D[]{

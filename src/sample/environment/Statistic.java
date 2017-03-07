@@ -21,11 +21,11 @@ public class Statistic {
         this.steps = steps;
     }
 
-    private Long getSteps() {
+    public Long getSteps() {
         return steps;
     }
 
-    private Long getLostConnection() {
+    public Long getLostConnection() {
         return lostConnection;
     }
 
@@ -33,18 +33,18 @@ public class Statistic {
         this.lostConnection = lostConnection;
     }
 
-    public void renewStatistic(){
+    void renewStatistic(){
         setSteps(getSteps() + 1);
         if (!Objects.equals(countConnections(), normConnections)) setLostConnection(getLostConnection() + 1);
     }
 
     private Integer countConnections() {
         Integer connections = 0;
-        for (int i = 0; i < numberOfRobots; i++){
+        for (int i = 0; i < numberOfRobots - 1; i++){
             for (int j = i + 1; j < numberOfRobots; j++){
                 Point2D robot1 = robots[i].getMyXY();
                 Point2D robot2 = robots[j].getMyXY();
-                if (evaluateDistance(robot1, robot2) > 15.0) connections++;
+                if (evaluateDistance(robot1, robot2) < 15.0) connections++;
             }
         }
         return connections;
