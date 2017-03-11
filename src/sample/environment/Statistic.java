@@ -11,7 +11,7 @@ import static sample.environment.Range.*;
 /**
  * Created by Sergo on 02.03.2017.
  */
-public class Statistic {
+class Statistic {
 
     private Long lostConnection = 0L;
     private Long steps = 0L;
@@ -21,11 +21,11 @@ public class Statistic {
         this.steps = steps;
     }
 
-    public Long getSteps() {
+    Long getSteps() {
         return steps;
     }
 
-    public Long getLostConnection() {
+    Long getLostConnection() {
         return lostConnection;
     }
 
